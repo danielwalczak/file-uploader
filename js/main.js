@@ -8,7 +8,7 @@
 
 	R.add({
 			url: '/',
-			html: '<h3>Upload file</h3>',
+			html: '<h3>Upload file <small>click on img to see it\'s original source</small></h3>',
 			ctrl: 'indexCtrl'
 		})
 		.add({

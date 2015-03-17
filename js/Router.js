@@ -9,14 +9,8 @@
 			defaultEl = null, // el which is container for the view html
 			current;
 
-		var settings = {
-			url: '',
-			html: '',
-			ctrl: null
-		};
-
 	  	function add(route){
-	  		routes[route.url] = route; 
+	  		routes[route.url] = route;
 
 	  		return this;
 	  	}
@@ -48,12 +42,13 @@
 		  		current = routes[stateName];
 		  		changeState(current);
 	  		}
-	  		else 
+	  		else
 	  			changeUrl(defaultUrl);
 	  	}
 
 	  	function changeState(state){
 	  		// inject html
+				console.log(state.html)
 	  		defaultEl.innerHTML = state.html;
 	  		// initialize controller function
 	  		// if(typeof state.ctrl === 'function')
